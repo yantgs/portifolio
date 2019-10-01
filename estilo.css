@@ -125,7 +125,7 @@ ul {
 .nav-icons .dropdown-menu {
   margin-top: 40px;
   margin-left: -220px;
-  position: relative;
+  position: absolute;
   background-color: #fff;
   opacity: 1 !important;
 }
