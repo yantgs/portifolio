@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <!-- meta tags obrigatórias -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Online Store</title>
+
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="components/fontawesome/css/all.css">
+  <!-- CSS arquivo -->
+  <link rel="stylesheet" href="estilo.css">
+  <!-- CSS do Bootstrap -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+
+
+</head>
+
+<body>
+  <!-- Início Navbar 1 -->
+  <header>
+    <div class="navbar custom-nav-container px-3 py-0 shadow-sm">
+      <a class="navbar-brand text-clipped mx-3" href="#">
+        <img src="components/img/logo ideia2.png" alt="" class="logo">
+
+      </a>
+
+      <div class="nav-icons-container d-flex justify-content-between mx-3">
+        <div class="nav-icons">
+          <a class="" href="#">
+            <i class="fas fa-search text-clipped"></i>
+          </a>
+        </div>
+        <div class="nav-icons mx-2">
+          <a class="" href="">
+            <i class="fas fa-shopping-bag bag-item-count text-clipped"></i>
+            <span class="badge">2</span>
+          </a>
+        </div>
+
+        <div class="nav-icons mx-2">
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="" data-toggle="dropdown">
+              <i class="fas fa-user text-clipped"></i>
+            </a>
+            <div class="dropdown-menu">
+              <form class="px-4 py-3">
+                <div class="form-group">
+                  <label for="DropdownFormEmail1">Endereço de email</label>
+                  <input type="email" class="form-control" id="DropdownFormEmail1" placeholder="email@exemplo.com">
+                </div>
+                <div class="form-group">
+                  <label for="DropdownFormPassword1">Senha</label>
+                  <input type="password" class="form-control" id="DropdownFormPassword1" placeholder="Senha">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                  <label class="form-check-label" for="dropdownCheck">
+                    Remember me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-bg my-2">Entrar</button>
+              </form>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Novo, por aqui? Regitre-se.</a>
+              <a class="dropdown-item" href="#">Esqueceu a senha?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim Navbar 1 -->
+
+
+    <!-- Inicio Navbar 2 -->
+    <nav class="navbar navbar-expand-sm py-0" data-toggle="affix" id="navbar2">
+      <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarbtn1"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars text-clipped"></i>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="#navbarbtn1">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Masculino</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Feminino</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Infantil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Lançamentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Promoções</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Fim Navbar 2 -->
+
+
+
+    <!-- promoção -->
+    <div class="text-white promocao text-center py-2 mb-5">
+      <span>
+        <span class=" text-uppercase font-weight-bold">Entrega grátis</span> para compras acima de 200$
+      </span>
+    </div>
+    <!-- fim de promoção -->
+
+
+    <!-- Inicio carousel -->
+    <div class="container" id="container1">
+      <div class="carousel slide" id="carousel-indicators" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#carousel-indicators" data-slide-to="0"></li>
+          <li data-target="#carousel-indicators" data-slide-to="1"></li>
+          <li data-target="#carousel-indicators" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#">
+              <img class="img-fluid d-lg-none" src="components/img/carousel/carousel-img-1-mobile.jpeg" alt="">
+              <img class="img-fluid d-none d-lg-block" src="components/img/carousel/carousel-img-1.jpeg" alt="">
+            </a>
+          </div>
+
+          <div class="carousel-item">
+            <a href="#">
+              <img class="img-fluid d-lg-none" src="components/img/carousel/carousel-img-2-mobile.jpg" alt="">
+              <img class="img-fluid d-none d-lg-block" src="components/img/carousel/carousel-img-2.jpg" alt="">
+            </a>
+          </div>
+
+
+          <div class="carousel-item">
+            <a href="#">
+              <img class="img-fluid d-lg-none" src="components/img/carousel/carousel-img-3-mobile.jpeg" alt="">
+              <img class="img-fluid d-none d-lg-block" src="components/img/carousel/carousel-img-3.jpeg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carousel-indicators" role="button" data-slide="prev">
+          <i class="fa fa-chevron-left text-clipped" aria-hidden="true"></i>
+        </a>
+        <a class="carousel-control-next" href="#carousel-indicators" role="button" data-slide="next">
+          <i class="fa fa-chevron-right text-clipped" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <!-- fim carousel -->
+
+  </header>
+
+
+
+
+
+  <section class="features-brands">
+    <div class="container" id="container_brands">
+      <div class="row align-items-center text-center" id="container_brands_filho">
+        <div class="col-12 col-sm-6 col-md-2 mb-5">
+          <a href="#">
+            <img src="components/img/brands/nike.svg" alt="">
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-2 mb-5">
+          <a href="#">
+            <img src="components/img/brands/jordan.svg" alt="">
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-2 mb-5">
+          <a href="#">
+            <img src="components/img/adidas-logo.png" alt="">
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-2 mb-5">
+          <a href="#">
+            <img src="components/img/brands/under-armour.svg" alt="">
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-2 mb-5">
+          <a href="#">
+            <img src="components/img/brands/vans.svg" alt="">
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-2 mb-5">
+          <a href="#">
+            <img src="components/img/brands/puma.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- coleção feminina -->
+  <section class="feminino pt-0" style="color: #e9ecec;">
+    <div class="container">
+      <div class="section-heading text-center mb-5">
+        <h1 class="text-clipped text-uppercase"> <span>Coleção Feminina</span></h1>
+        <p class="text-secondary"><span>Lançamentos</span></p>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 mb-3 hero-img">
+          <a href="#">
+            <img src="components/img/hero/hero1.jpg" alt="" class="img-feminino">
+          </a>
+          <div class="mt-2">
+            <a href="#">
+              <span class="text-uppercase font-weight-bold">Nike Air Max - Feminino</span> <br>
+              <span>Comprar</span> <i class="fas fa-caret-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 mb-3 hero-img">
+          <a href="#">
+            <img src="components/img/hero/hero2.jpg" alt="" class="img-feminino">
+          </a>
+          <div class="mt-2">
+            <a href="#">
+              <span class="text-uppercase font-weight-bold">Nike Air Max - Feminino</span> <br>
+              <span>Comprar</span> <i class="fas fa-caret-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 mb-3 hero-img">
+          <a href="#">
+            <img src="components/img/hero/hero3.jpg" alt="" class="img-feminino">
+          </a>
+          <div class="mt-2">
+            <a href="#">
+              <span class="text-uppercase font-weight-bold">Nike Air Max - Feminino</span> <br>
+              <span>Comprar</span> <i class="fas fa-caret-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 mb-3 hero-img">
+          <a href="#">
+            <img src="components/img/hero/hero4.jpg" alt="" class="img-feminino">
+          </a>
+          <div class="mt-2">
+            <a href="#">
+              <span class="text-uppercase font-weight-bold">Nike Air Max - Feminino</span> <br>
+              <span>Comprar</span> <i class="fas fa-caret-right"></i>
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- fim coleção feminina -->
+  <!-- lançamentos -->
+  <section class="lancamentos">
+    <div class="container">
+      <div class="section-heading text-center mb-5">
+        <h1 class="text-clipped text-uppercase"> <span>Lançamentos</span></h1>
+        <p class="text-secondary"><span>Todas as marcas disponíveis</span></p>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-12 col-sm-6 col-md-3 mb-3">
+          <div class="novos-lancamentos-img mb-3">
+            <img src="components/img/shoes/shoe6.jpg" alt="" class="img-lancamentos">
+          </div>
+          <a href="#">
+            <span class="text-uppercase font-weight-bold">Nike Air Max</span> <br>
+            <span>Comprar</span> <i class="fas fa-caret-right"></i>
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 mb-3">
+          <div class="novos-lancamentos-img mb-3">
+            <img src="components/img/shoes/shoe3.jpg" alt="" class="img-lancamentos">
+          </div>
+          <a href="#">
+            <span class="text-uppercase font-weight-bold">Nike Air Max</span> <br>
+            <span>Comprar</span> <i class="fas fa-caret-right"></i>
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 mb-3">
+          <div class="novos-lancamentos-img mb-3">
+            <img src="components/img/shoes/shoe4.jpg" alt="" class="img-lancamentos">
+          </div>
+          <a href="#">
+            <span class="text-uppercase font-weight-bold">Nike Air Max</span> <br>
+            <span>Comprar</span> <i class="fas fa-caret-right"></i>
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="novos-lancamentos-img mb-3">
+            <img src="components/img/shoes/shoe5.jpg" alt="" class="img-lancamentos">
+          </div>
+          <a href="#">
+            <span class="text-uppercase font-weight-bold">Nike Air Max</span> <br>
+            <span>Comprar</span> <i class="fas fa-caret-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- serviços -->
+  <section class="servicos">
+    <div class="container">
+      <div class="row text-center pt-5" id="box-servicos">
+        <div class="col-12 col-sm-6 col-md-3 mb-5">
+          <div class="nossos-servicos-icon d-flex mb-3 mx-auto">
+            <i class="fas fa-shipping-fast text-clipped m-auto"></i>
+          </div>
+          <div class="nossos-servicos-descricao">
+            <h5 class="text-uppercase font-weight-bold">Entrega grátis</h5>
+            <p>Entrega grátis para todo o país</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 mb-5">
+          <div class="nossos-servicos-icon d-flex mb-3 mx-auto">
+            <i class="fas fa-sync text-clipped m-auto"></i>
+          </div>
+          <div class="nossos-servicos-descricao">
+            <h5 class="text-uppercase font-weight-bold">Dinheiro de volta</h5>
+            <p>Devolvemos o dinheiro em 30 dias, caso haja algum problema</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 mb-5">
+          <div class="nossos-servicos-icon d-flex mb-3 mx-auto">
+            <i class="fas fa-headset text-clipped m-auto"></i>
+          </div>
+          <div class="nossos-servicos-descricao">
+            <h5 class="text-uppercase font-weight-bold">Suporte 24 horas</h5>
+            <p>Entre em contato 24 horas por dia, 7 dias por semana para qualquer dúvida</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 mb-5">
+          <div class="nossos-servicos-icon d-flex mb-3 mx-auto">
+            <i class="fas fa-credit-card text-clipped m-auto"></i>
+          </div>
+          <div class="nossos-servicos-descricao">
+            <h5 class="text-uppercase font-weight-bold">Segurança</h5>
+            <p>Aceitamos todos os tipos de pagamentos da maneira mais segura possível</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <adress>
+            <strong class="h3 font-weight-normal">Loja Online</strong> <br>
+            1234 Rua Exemplo <br>
+            Rio de Janeiro, Rio 1203
+            Fone: (22) 9-9999-9999
+          </adress>
+
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="footer-title">
+            <h5>Missão</h5>
+            <span class="costum-border"></span>
+          </div>
+          <ul class="footer-list">
+            <li>
+              <a class="footer-link" href="#">Lorem</a>
+            </li>
+
+            <li>
+              <a class="footer-link" href="#">Lorem</a>
+            </li>
+
+            <li>
+              <a class="footer-link" href="#">Lorem</a>
+            </li>
+
+            <li>
+              <a class="footer-link" href="#">Lorem</a>
+            </li>
+
+            <li>
+              <a class="footer-link" href="#">Lorem</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="footer-title">
+            <h5>Serviços</h5>
+            <span class="costum-border"></span>
+          </div>
+          <ul class="footer-list">
+            <li>
+              <a class="footer-link" href="#">Lorem</a>
+            </li>
+
+            <li>
+              <a class="footer-link" href="#">Lorem</a>
+            </li>
+
+            <li>
+              <a class="footer-link" href="#">Lorem</a>
+            </li>
+
+            <li>
+              <a class="footer-link" href="#">Lorem</a>
+            </li>
+
+            <li>
+              <a class="footer-link" href="#">Lorem</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="line mt-5">
+        <div class="w-100 d-md-flex justify-content-between align-items-center text-center">
+          <div class="order-2">
+            <a class="footer-link" href="#">Blá bla bla</a>
+            <a class="footer-link ml-3" href="#">Blá bla bla</a>
+            <a class="footer-link ml-3" href="#">Blá bla bla</a>
+          </div>
+          <p class="m-0 text-sm order-1">
+            &copy; 2019 Loja Online Yan. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
